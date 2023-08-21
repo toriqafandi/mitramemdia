@@ -1,0 +1,26 @@
+[
+    {
+        "id_tipe": 0,
+        "name_tab": "All Categories"
+    },
+    {
+        "id_tipe": 1,
+        "name_tab": "Letter Timbul"
+    },
+    {
+        "id_tipe": 2,
+        "name_tab": "Billboard & Baliho"
+    },
+    {
+        "id_tipe": 3,
+        "name_tab": "Neon Box & LED Box"
+    },
+    {
+        "id_tipe": 4,
+        "name_tab": "Sign Board"
+    },
+    {
+        "id_tipe": 5,
+        "name_tab": "Branding"
+    }    
+]

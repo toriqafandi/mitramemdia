@@ -1,0 +1,42 @@
+[
+    {
+        "path": "logo-bankjatim.webp",
+        "altName": "Gor PBSI",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-bosch.webp",
+        "altName": "Mobil Branding",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-sharp.webp",
+        "altName": "Hotel Bonnet",
+        "id_tipe": 2
+    },
+    {
+        "path": "logo-ubs.webp",
+        "altName": "Prodia Health Care",
+        "id_tipe": 3
+    },
+    {
+        "path": "logo-vivo.webp",
+        "altName": "Xiaomi Interior",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-j&t-express.webp",
+        "altName": "Xiaomi Interior",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-akrland.webp",
+        "altName": "Xiaomi Interior",
+        "id_tipe": 1
+    },
+    {
+        "path": "logo-hp.webp",
+        "altName": "Xiaomi Interior",
+        "id_tipe": 1
+    }
+]

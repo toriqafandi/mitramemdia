@@ -1,0 +1,74 @@
+[
+    {
+        "path": "gor-pbsi.jpg",
+        "altName": "Gor PBSI",
+        "title": "Branding gor PBSI",
+        "id_tipe": 1
+    },
+    {
+        "path": "mobil-branding.jpg",
+        "altName": "Mobil Branding",
+        "title": "Mobil Branding",
+        "id_tipe": 1
+    },
+    {
+        "path": "hotel-bonnet.jpg",
+        "altName": "Hotel Bonnet",
+        "title": "Hotel Bonnet Surabaya",
+        "id_tipe": 2
+    },
+    {
+        "path": "prodia.jpg",
+        "altName": "Prodia Health Care",
+        "title": "Prodia Health Care",
+        "id_tipe": 3
+    },
+    {
+        "path": "xiaomi-interior.jpg",
+        "altName": "Xiaomi Interior",
+        "title": "Xiaomi Interior",
+        "id_tipe": 1
+    },
+    {   
+        "path": "polytron.jpg",
+        "altName": "Polytron",
+        "title": "Polytron",
+        "id_tipe": 2
+    },
+    {
+        "path": "billboard-pilgub.jpg",
+        "altName": "Billboard PilGub",
+        "title": "Billboard PilGub",
+        "id_tipe": 4
+    },
+    {   
+        "path": "banner-k24.jpg",
+        "altName": "Banner K24",
+        "title": "Banner K24",
+        "id_tipe": 5
+    },
+    {
+        "path": "neonbox-prodia.jpg",
+        "altName": "NeonBox",
+        "title": "NeonBox",
+        "id_tipe": 2
+    },
+    {   
+        "path": "interior-sariroti.jpg",
+        "altName": "Rak Sari Roti",
+        "title": "Rak Sari Roti",
+        "id_tipe": 1
+    },
+    {
+        "path": "Signboard-Superindo.jpg",
+        "altName": "Signboard Super Indo",
+        "title": "Signboard Super Indo",
+        "id_tipe": 3
+    },
+    {
+        "path": "banner-pjb.jpg",
+        "altName": "Banner PJB",
+        "title": "Banner PJB",
+        "id_tipe": 5
+    }
+]

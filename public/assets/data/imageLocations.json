@@ -1,0 +1,47 @@
+[
+    {
+        "imageSrc": "/assets/images/locations/location-a-yani.png",
+        "lat": -7.327230,
+        "long": 112.731627,
+        "href": "#",
+        "altName": "image 1",
+        "title": "Billboard A. Yani Surabaya",
+        "desc": "Billboard berada di Area Taman Pelangi Surabaya"
+    },
+    {
+        "imageSrc": "/assets/images/locations/location-ayani.png",
+        "lat": -7.327165,
+        "long": 112.730755,
+        "href": "#",
+        "altName": "image 2",
+        "title": "Billboard A. Yani Surabaya",
+        "desc": "Billboard berada di Area Taman Pelangi Surabaya"
+    },
+    {
+        "imageSrc": "/assets/images/locations/location-ir-soekarno.png",
+        "lat": -7.289994,
+        "long": 112.780652,
+        "href": "#",
+        "altName": "image 3",
+        "title": "Billboard Ir. Soekarno Surabaya",
+        "desc": "Billboard berada di jalan merr ir. soekarno Surabaya"
+    },    
+    {
+        "imageSrc": "/assets/images/locations/location-bung-tomo.png",
+        "lat": -7.291354,
+        "long": 112.747566,
+        "href": "#",
+        "altName": "image 1",
+        "title": "Billboard Bung Tomo",
+        "desc": "Billboard berada di Jalan Raya Bung Tomo Surabaya"
+    },
+    {
+        "imageSrc": "/assets/images/locations/location-basuki-rahmad.png",
+        "lat": -7.265850,
+        "long": 112.740923,
+        "href": "#",
+        "altName": "image 2",
+        "title": "Billboard Basuki Rahmad (Polsek Tegalsari) Surabaya",
+        "desc": "Billboard berada di Jalan Raya Basuki Rahmad Surabaya"
+    }
+]
