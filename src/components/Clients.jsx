@@ -14,10 +14,48 @@ import Image from 'next/image'
 const Clients = () => {
   return (
     <>
-    <section className='bg-gray-300 text-mColor'>
-        <div className='container m-auto px-32'>
-            <div className='flex justify-between'>
-                <div className='w-[20%] flex items-center justify-end text-right p-3'>
+    <section className='bg-gray-100 text-mColor'>
+        <div className='px-4 m-auto Laptop:container Laptop:px-32'>
+          <div className='grid grid-cols-1 Laptop:grid-cols-3 py-3'>
+            <div className='text-center text-2xl font-bold uppercase px-4 items-center Laptop:flex Laptop:text-right Laptop:text-5xl'>
+              <div className='smallPhone:hidden'></div>
+              <div>
+                <h1 className=''>our clients</h1>
+              </div>
+            </div>
+            <div className='py-2 font-bold uppercase Laptop:col-span-2 '>
+              {
+                <Swiper
+                  slidesPerView={4}
+                  centeredSlides={true}
+                  spaceBetween={30}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Autoplay]}
+                >
+                  {
+                    ClientsImg.map((value, idx) => (
+                      <SwiperSlide key={idx} className="grid content-center">
+                        <Image 
+                            src={'/assets/images/clients/'+value.path}
+                            width={600}
+                            height={50}
+                            priority={true}
+                            alt="Logo Mitramedia Advertising" 
+                            className="aspect-auto w-full"
+                            quality={100}
+                        />
+                      </SwiperSlide>
+                    ))
+                  }
+                </Swiper>
+              }
+            </div>
+          </div>
+                {/* <div className='w-[20%] flex items-center justify-end text-right p-3'>
                     <h1 className='items-end font-bold text-5xl uppercase'>
                       our Clients  
                     </h1>
@@ -51,24 +89,8 @@ const Clients = () => {
                         ))
                       }
                     </Swiper>
-                    /* {
-                      ClientsImg.map((value, idx) => (
-                        <div key={idx} className='p-1 m-5'>
-                          <Image 
-                            src={'/assets/images/clients/'+value.path}
-                            width={400}
-                            height={24}
-                            priority={true}
-                            alt="Logo Mitramedia Advertising" 
-                            className="aspect-auto w-full"
-                            quality={100}
-                          />
-                        </div>
-                      ))
-                    } */
                     }
-                </div>
-            </div>
+                </div> */}
         </div>
     </section>
     </>
