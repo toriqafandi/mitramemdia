@@ -51,7 +51,7 @@ export default function Home() {
       </Swiper>
         <h1 className="absolute text-left font-bold text-xl bold text-white z-[3] uppercase top-[12%] w-[50%] inset-x-[10%] Laptop:top-[35%] Laptop:text-6xl">Advertising outdoor & indoor solution</h1>
         <p className="absolute top-[23%] inset-x-[10%] text-left text-sm bold text-white z-[3] capitalize w-[75%] leading-6 Laptop:top-[70%] Laptop:text-2xl">Menyediakan jasa pembuatan & pemasangan seperti <Typed className='bg-white text-black uppercase p-2 font-extrabold' strings={['Pembuatan Brosur', 'Letter Timbul', 'Mobil Branding', 'Billboard & Reklame', 'Neon Box & LED Box,', 'Banner']} typeSpeed={140} backSpeed={140} loop/></p>
-        <button className='font-medium absolute smallPhone:bg-mainColor rounded-full capitalize z-[3] px-4 py-2 left-[10%] top-[32%] text-sm Laptop:text-2xl Laptop:text-white Laptop:top-[80%] Laptop:bg-transparent Laptop:border-2 hover:Laptop:border-mColor hover:Laptop:bg-mColor Laptop:border-white Laptop:bg-mainColor'>hubungi kami</button>
+        <button className='font-medium absolute bg-mainColor rounded-full capitalize z-[3] px-4 py-2 left-[10%] top-[32%] text-sm Laptop:text-2xl text-white Laptop:top-[80%]'>hubungi kami</button>
       </div>
     </section>
     <Apa />
