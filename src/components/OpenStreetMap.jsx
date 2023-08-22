@@ -1,48 +1,37 @@
-import { useState, useEffect } from 'react';
+import { Fragment, useCallback, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, useMap, Popup, useMapEvent } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMap, Popup } from 'react-leaflet';
 import L from 'leaflet';
 
-// export function ChangeView({ coords }) {
-//   const map = useMap();
-//   map.setView(coords, 13)
-// }
-
-function MyComponent({ coords }) {
-  const map = useMapEvent('click', () => {
-    map.setView([50.5, 30.5], map.getZoom())
-  })
-  return null
+export function ChangeView({ coords }) {
+  const map = useMap();
+  map.setView(coords, 13);
+  return null;
 }
 
-export default function OpenStreetMap({params}) {
-  const [geoData, setGeoData] = useState({ lat: params.lat, lng: params.long });
-
-  const center = [params.lat, params.long];
+export default function OpenStreetMap(params) {
+  const [geoData, setGeoData] = useState(params);
+  const centerLoc = [geoData.lat, geoData.lng];
 
   return (
-    <MapContainer className='w-100 h-[50vh] rounded-lg' center={center} zoom={13}>
+    <>
+    <MapContainer center={centerLoc} zoom={false} className='rounded-lg z-0' style={{ height: '50vh' }}>
       <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      {geoData.lat && geoData.lng && (
-        <Marker
-            icon={
-                new L.Icon({
-                    iconUrl: '/assets/images/point-mitra.png',
-                    iconSize: [50, 50]
-                })
-            } 
-            position={[geoData.lat, geoData.lng]} 
+        <Marker 
+          position={[geoData.lat, geoData.lng]} 
+          icon={
+            new L.Icon({
+              iconUrl: '/assets/images/point-mitra.png',
+              iconSize: [50, 50]
+            })
+          } 
         >
-            <Popup>
-                <span className='font-bold'>Mitramedia Advertising</span>
-            </Popup>
         </Marker>
-      )}
-      <MyComponent coords={center}/>
-      {/* <ChangeView coords={center} /> */}
+      <ChangeView coords={centerLoc} />
     </MapContainer>
+    </>
   );
 }

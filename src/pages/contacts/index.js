@@ -1,8 +1,14 @@
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import React from 'react'
 import { FaPhone, FaMapMarker, FaMailBulk } from 'react-icons/fa'
 
+const OpenStreetMap = dynamic(() => import('../../components/OpenStreetMap'), {
+  ssr: false,
+})
+
 const index = () => {
+  const params = { lat:-7.3000424, lng:112.765686 } 
   return (
     <section id='contact-us' className='bg-gray-200 pt-28 pb-14'>
       <div className='smallPhone:mx-8 m-auto shadow-lg rounded-md bg-white Laptop:container'>
@@ -67,7 +73,7 @@ const index = () => {
         </div>
 
         <div className='px-6 pb-6'>
-          <h1>MAPS</h1>
+          <OpenStreetMap {...params} /> 
         </div>
 
       </div>
